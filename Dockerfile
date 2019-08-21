@@ -1,14 +1,14 @@
 FROM exelban/baseimage:node-latest
 
-LABEL name="stylelint" \
-      version="1.0.0" \
-      repository="https://github.com/exelban/stylelint" \
-      homepage="https://github.com/exelban/stylelint" \
-      maintainer="Serhiy Mytrovtsiy <mitrovtsiy@ukr.net>" \
-      com.github.actions.name="stylelint" \
-      com.github.actions.description="GitHub Action that runs stylelint." \
-      com.github.actions.icon="layout" \
-      com.github.actions.color="black"
+LABEL name="stylelint"
+LABEL version="1.0.0"
+LABEL repository="https://github.com/exelban/stylelint"
+LABEL homepage="https://github.com/exelban/stylelint"
+LABEL maintainer="Serhiy Mytrovtsiy <mitrovtsiy@ukr.net>"
+LABEL com.github.actions.name="stylelint"
+LABEL com.github.actions.description="GitHub Action that runs stylelint."
+LABEL com.github.actions.icon="layout"
+LABEL com.github.actions.color="black"
 
 COPY LICENSE README.md /
 
