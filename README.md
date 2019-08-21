@@ -10,7 +10,7 @@ GitHub Action that runs [stylelint](https://stylelint.io).
 ### Default values
 #### Configuration file
 Action will check if stylelint is already installed. If not, it will install styleling.
-Also its check if configuration file is exist (`.stylelintrc`).
+Also, its check if the configuration file exists (`.stylelintrc`).
 
 By default action use next configuration:
 ```json
