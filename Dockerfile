@@ -10,7 +10,7 @@ LABEL name="stylelint" \
       com.github.actions.icon="layout" \
       com.github.actions.color="black"
 
-COPY README.md /
+COPY LICENSE README.md /
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
