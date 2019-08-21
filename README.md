@@ -7,6 +7,11 @@ GitHub Action that runs [stylelint](https://stylelint.io).
 - uses: exelban/stylelint@master
 ```
 
+Or use docker image:
+```yaml
+- uses: "docker://exelban/stylelint:latest"
+```
+
 ### Default values
 #### Configuration file
 Action will check if stylelint is already installed. If not, it will install styleling.
