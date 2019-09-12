@@ -14,7 +14,7 @@ Or use docker image:
 
 ### Default values
 #### Configuration file
-Action will check if stylelint is already installed. If not, it will install styleling.
+Action will check if stylelint is already installed. If not, it will install stylelint.
 Also, its check if the configuration file exists (`.stylelintrc`).
 
 By default action use next configuration:
