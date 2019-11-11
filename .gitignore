@@ -1,2 +1,6 @@
 .idea
 .git
+node_modules
+.stylelintrc
+yarn.lock
+package.json

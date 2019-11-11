@@ -5,8 +5,15 @@ branding:
   icon: 'layout'
   color: 'black'
 inputs:
-  INDENT_SPACES:
-    description: 'Space indentation'
+  pattern:
+    description: 'Pattern for style files.'
+    default: './*.css'
+  config_path:
+    description: 'Path to stylelint configuration file.'
+    default: './'
+  indent_space:
+    description: 'Space indentation.'
+    default: 2
 runs:
   using: 'docker'
   image: 'Dockerfile'
