@@ -1,6 +1,6 @@
 .idea
 .git
 node_modules
-.stylelintrc
+.stylelintr2c
 yarn.lock
 package.json

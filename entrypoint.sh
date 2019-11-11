@@ -21,7 +21,7 @@ if [ ! -e stylelint_path ]; then
   yarn add stylelint stylelint-config-standard --silent
 fi
 
-if [ ! -e "${configPath}.stylelintrc" ] && [ ! -e "${configPath}.stylelint.json" ]; then
+if [ ! "$(echo ${configPath}.stylelintrc*)" != "${configPath}.stylelintrc*" ]; then
   echo "{
   \"extends\": \"stylelint-config-standard\",
   \"rules\": {
