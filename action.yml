@@ -4,16 +4,6 @@ author: 'Serhiy Mytrovtsiy <mitrovtsiy@ukr.net>'
 branding:
   icon: 'layout'
   color: 'black'
-inputs:
-  pattern:
-    description: 'Pattern for style files.'
-    default: './*.css'
-  config_path:
-    description: 'Path to stylelint configuration file.'
-    default: './'
-  indent_space:
-    description: 'Space indentation.'
-    default: 2
 runs:
   using: 'docker'
   image: 'Dockerfile'

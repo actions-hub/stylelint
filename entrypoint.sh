@@ -2,9 +2,9 @@
 
 set -e
 
-configPath=$INPUT_CONFIG_PATH
-indentSpaces=$INPUT_INDENT_SPACES
-pattern=$INPUT_PATTERN
+configPath="./"
+indentSpaces=2
+pattern="*.css"
 
 if [ ! -z "${CONFIG_PATH}" ]; then
   configPath=$CONFIG_PATH
@@ -32,4 +32,5 @@ fi
 
 echo ::add-path::${stylelint_path}
 
+echo $pattern
 sh -c "$stylelint_path $pattern"

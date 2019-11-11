@@ -10,26 +10,17 @@ To use stylelint in your workflow just add this step:
 ```
 
 ## Configuration
-
 Action has 3 parameters which you can set:
 - PATTERN - Pattern for style files.
 - CONFIG_PATH - Path to stylelint configuration file
 - INDENT_SPACE - Space indentation
 
-This parameter can be set throw environment variables:
+This parameters can be set throw environment variables:
 ```yaml
 - uses: actions-hub/stylelint@master
   env:
     INDENT_SPACES: 4
     PATTERN: "*.scss"
-```
-
-Or throw inputs:
-```bash
-- uses: actions-hub/stylelint@master
-  with:
-    indent_spaces: 4
-    pattern: "*.scss"
 ```
 
 ### .stylelintrc
@@ -50,19 +41,17 @@ If you want to specify which file or types must be validated.
 You need to pass the pattern as a `PATTERN` variable.
 By default, it will try to find `*.css`.
 
-
 ### Indentation
 Indentation can be set by environment variable `INDENT_SPACES`.  
 By default space, indent is 2.
 
 ```yaml
 - uses: actions-hub/stylelint@master
-  with:
-    indent_spaces: 4
+  ENV:
+    INDENT_SPACES: 4
 ```
 
 ## Example
-
 ### Default values
 ```bash
 name: Test
@@ -91,9 +80,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions-hub/stylelint@master
-        with:
-          pattern: "*.scss"
-          indent_spaces: 4
+        env:
+          PATTERN: "*.scss"
+          INDENT_SPACES: 4
 ```
 
 ## License
