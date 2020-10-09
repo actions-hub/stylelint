@@ -30,7 +30,7 @@ if [ ! "$(echo ${configPath}.stylelintrc*)" != "${configPath}.stylelintrc*" ]; t
 }" > .stylelintrc
 fi
 
-echo ::add-path::${stylelint_path}
+echo "${stylelint_path}" >> $GITHUB_PATH
 
 echo $pattern
 sh -c "$stylelint_path $pattern"
