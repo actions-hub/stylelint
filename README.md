@@ -15,7 +15,7 @@ Action has 3 parameters which you can set:
 - CONFIG_PATH - Path to stylelint configuration file
 - INDENT_SPACE - Space indentation
 
-This parameters can be set throw environment variables:
+This parameters can be set through environment variables:
 ```yaml
 - uses: actions-hub/stylelint@master
   env:
