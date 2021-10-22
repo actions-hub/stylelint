@@ -1,0 +1,12 @@
+name: test
+
+on: [push]
+
+jobs:
+  success:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          echo $'html {\n  width: 100%;\n  height: 10%;\n}' > main.css
+      - uses: ./
