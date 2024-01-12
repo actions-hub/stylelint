@@ -1,4 +1,4 @@
-FROM exelban/baseimage:node-18
+FROM exelban/baseimage:node-latest
 
 COPY LICENSE README.md /
 
